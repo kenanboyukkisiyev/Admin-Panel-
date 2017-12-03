@@ -1,0 +1,107 @@
+/* Color Theme File */
+
+a,
+.theme_color,
+.sec-title h2 span,
+.team-member .inner-box .lower-box h3 a:hover,
+.services-block-six .inner-box h3 a:hover,
+.page-title .bread-crumb li a:hover,
+.main-header .main-box .number,
+.main-menu .navigation > li:hover > a,
+.main-menu .navigation > li.current > a,
+.project-section .filters .filter.active,
+.project-section .filters .filter:hover,
+.social-icon-one li a:hover,
+.news-block .inner-box h3 a:hover,
+.news-block .inner-box .read-more:hover,
+.services-block-two .inner-box h3 a:hover,
+.services-block-three .inner-box .content-column .inner-column h2 span,
+.services-block-four .inner-box .content-column .inner-column h2 span,
+.subscribe-section .inner-section .title-column h2:before,
+.gallery-block .inner-box .image-box .overlay-box .content .icon,
+.project-tab .product-tab-btns .p-tab-btn:hover,
+.news-block-two .inner-box h3 a:hover,
+.news-block-two .inner-box .read-more:hover,
+.news-block-three .inner-box .lower-box h3 a:hover,
+.project-tab .product-tab-btns .p-tab-btn.active-btn,
+.default-portfolio-item .overlay-inner .image-link:hover,
+.categories-blog .inner-box ul li.active a::before,
+.categories-blog .inner-box ul li a:hover::before,
+.news-block-four .inner-box .lower-box h3 a:hover,
+.sidebar .popular-posts .post a,
+.sidebar .popular-posts .post a:hover,
+.social-icon-four a:hover,
+.sidebar-page-container .comments-area .comment .comment-reply{
+	color:#FF4136;
+}
+
+/*Background Color*/
+.scroll-to-top:hover,
+.btn-style-one:hover,
+.btn-style-three:hover,
+.sidebar .popular-tags a:hover,
+.services-block .inner-box:hover,
+.services-block-five .inner-box:after,
+.main-menu .navigation > li > ul > li:hover > a,
+.main-menu .navigation > li > ul > li  > ul > li > a:hover,
+.gallery-block .inner-box .image-box .overlay-box .content .icon:hover{
+	background-color:#FF4136;
+}
+
+
+/*Border Color*/
+
+.btn-style-one,
+.btn-style-three:hover,
+.main-menu .navigation > li > ul > li > ul,
+.main-menu .navigation > li > ul,
+.services-block-five .inner-box,
+.sidebar .popular-tags a:hover,
+.subscribe-form .form-group input[type="text"]:focus,
+.subscribe-form .form-group input[type="email"]:focus,
+.comment-form .form-group input[type="text"]:focus,
+.comment-form .form-group input[type="password"]:focus,
+.comment-form .form-group input[type="tel"]:focus,
+.comment-form .form-group input[type="email"]:focus,
+.comment-form .form-group select:focus,
+.comment-form .form-group textarea:focus,
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus{
+	border-color:#FF4136;
+}
+
+/*RGBA Color Light*/
+.gallery-block .inner-box .image-box .overlay-box,
+.default-portfolio-item .overlay-box{
+	background-color:rgba(255,65,54,0.60);
+}
+
+/*RGBA Color Dark*/
+
+@media only screen and (max-width: 767px){
+	
+	.main-menu .navbar-header .navbar-toggle{
+		border-color:#ffffff;
+	}
+	
+	.main-menu .navbar-header .navbar-toggle,
+	.main-menu .navbar-collapse > .navigation,
+	.main-menu .navbar-collapse > .navigation > li > ul,
+	.main-menu .navbar-collapse > .navigation > li > ul > li > ul,
+	.main-menu .navbar-collapse > .navigation > li > a,
+	.main-menu .navbar-collapse > .navigation > li > ul > li > a,
+	.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li > a,
+	.main-menu .navbar-collapse > .navigation > li > a:hover,
+	.main-menu .navbar-collapse > .navigation > li > a:active,
+	.main-menu .navbar-collapse > .navigation > li > a:focus,
+	.main-menu .navbar-collapse > .navigation > li:hover > a,
+	.main-menu .navbar-collapse > .navigation > li > ul > li:hover > a,
+	.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li:hover > a,
+	.main-menu .navbar-collapse > .navigation > li.current > a,
+	.main-menu .navbar-collapse > .navigation > li.current-menu-item > a,
+	.header-style-two.inner-header .main-menu .navigation > li > a{
+		background-color:#FF4136;
+	}
+	
+}

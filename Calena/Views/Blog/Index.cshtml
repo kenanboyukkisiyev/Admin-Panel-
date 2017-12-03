@@ -1,0 +1,104 @@
+﻿@using Calena.Models;
+@{
+    ViewBag.Title = "Index";
+}
+
+ <!--Page Title-->
+<section class="page-title" style="background-image:url(images/background/2.jpg)">
+    <div class="auto-container">
+        <h1>Latest News</h1>
+        <ul class="bread-crumb clearfix">
+            <li><a href="@Url.Action("index","home")">Home</a></li>
+            <li class="active">Blog</li>
+        </ul>
+    </div>
+</section>
+<!--End Page Title-->
+<!--Blog Page Section-->
+<section class="blog-page-section">
+    <div class="auto-container">
+        <div class="inner-container">
+            <div class="row clearfix">
+                @foreach (Blog item in ViewBag.blog)
+                {
+                    <div class="news-block-two col-md-4 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <div class="image">
+                                <a href="blog-detail.html"><img src="~/Updates/@item.Photo" alt="" /></a>
+                            </div>
+                            <ul class="info-box">
+                                <li>By <span class="theme_color">Admin</span></li>
+                                <li>Oct 2,2017</li>
+                                <li>65 Likes</li>
+                            </ul>
+                            <h3><a href="@Url.Action("index","Detals")">@item.Title </a></h3>
+                            <div class="text">@item.Texts</div>
+                          
+                            <a href="blog-detail.html" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                }
+               
+             
+
+               
+
+            </div>
+        </div>
+
+        <!-- Styled Pagination -->
+        <div class="styled-pagination text-center">
+            <ul class="clearfix">
+                <li><a class="prev" href="#">Prev</a></li>
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a class="next" href="#">Next</a></li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+<!--End Blog Page Section-->
+<!--Subscribe Section-->
+<section class="subscribe-section grey-bg">
+    <div class="auto-container">
+        <div class="inner-section">
+            <div class="row clearfix">
+                <div class="title-column col-md-4 col-sm-12 col-xs-12">
+                    <h2>Subscribe to Newsletter</h2>
+                </div>
+                <div class="form-column col-md-8 col-sm-12 col-xs-12">
+
+                    <!--Subscribe Section-->
+                    <div class="subscribe-form">
+                        <form method="post" action="http://t.commonsupport.com/calena/contact.html">
+                            <div class="row clearfix">
+                                <!--Column-->
+                                <div class="column col-md-9 col-sm-12 col-xs-12">
+                                    <div class="row clearfix">
+                                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" name="name" value="" placeholder="Your Name" required>
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                            <input type="email" name="email" value="" placeholder="Email address" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Column-->
+                                <div class="column col-md-3 col-sm-12 col-xs-12">
+                                    <div class="form-group">
+                                        <button type="submit" class="theme-btn btn-style-one">subscribe</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Subscribe Section-->
+
